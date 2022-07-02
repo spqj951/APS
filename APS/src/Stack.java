@@ -24,11 +24,11 @@ public class Stack {
     }
     public static void push(int[] s,int a){
         --N;
-        if(s[N] != Integer.MIN_VALUE){
-            --N;
-            push(s, a);
-        }
-        else s[N] = a;
+//        if(s[N] != Integer.MIN_VALUE){
+//            --N;
+//            push(s, a);
+//        }
+        s[N] = a;
 
     }
     public static int pop(int[] s ) throws ArrayIndexOutOfBoundsException{
